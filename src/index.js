@@ -1,12 +1,52 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App/>, document.getElementById('root'));
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+
+
+
+
+// EXAMPLES OF CLASSES AND INHERITANCE
+
+// class Animal{
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+
+
+//   speak(){
+//     console.log('I am', this.name, 'and I am', this.age, 'years old')
+//   }
+
+// }
+
+// const animal = new Animal('Simba', 3)
+// animal.speak();
+
+// console.log(animal);
+
+// class Lion extends Animal{
+//   constructor(name, age, furColor, speed){
+//     super(name, age);
+//     this.furColor = furColor;
+//     this.speed = speed;
+//   }
+
+//   roar(){
+//     console.log(
+//       'ROOAR! I HAVE', 
+//       this.furColor, 
+//       'fur and I run a', 
+//       this.speed, 
+//       'speed'
+//     );
+//   }
+// }
+
+// const lion1 = new Lion('Mufasa', 20, 'golden', 25);
+// lion1.speak();
+// lion1.roar();
+// console.log(lion1);
